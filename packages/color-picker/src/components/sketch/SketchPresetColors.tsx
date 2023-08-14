@@ -27,6 +27,8 @@ export default function SketchPresetColors({
       margin: "0 10px 10px 0",
     },
     swatch: {
+      height: "100%",
+      width: "100%",
       borderRadius: "3px",
       boxShadow: "inset 0 0 0 1px rgba(0,0,0,.15)",
     },
@@ -53,7 +55,7 @@ export default function SketchPresetColors({
         return (
           <div key={key} style={styles.swatchWrap}>
             <div
-              style={{ ...styles.swatch, backgroundColor: c.color }}
+              style={{ ...styles.swatch, background: c.color }}
               onClick={(e) => {
                 handleClick(c.color, e);
               }}

@@ -1,3 +1,32 @@
+
+
+### [1.0.1](https://github.com/orhan/pano-color-picker/compare/v3.2.2...v1.0.1) (2023-08-14)
+
+
+### Bug Fixes 🛠
+
+* warn on broken links ([e5b0a34](https://github.com/orhan/pano-color-picker/commit/e5b0a34f6afcaa74fa8b907b0deff5e9dd5c41f4))
+
+
+### Others 🔧
+
+* clean up scripts ([98458e9](https://github.com/orhan/pano-color-picker/commit/98458e91d0e94e020c37a493aade20549e547c79))
+* run prettier ([7fa1a30](https://github.com/orhan/pano-color-picker/commit/7fa1a301d46fcd03d20f1ec2212738f4cf148998))
+
+
+### Docs 📃
+
+* add vite base url ([217933c](https://github.com/orhan/pano-color-picker/commit/217933ca90e8ea306a6de13f3e495823660553a5))
+* correct domain ([22f8544](https://github.com/orhan/pano-color-picker/commit/22f85442b393fedbaa216bd1b652f2d16d15675b))
+* fix more broken links ([2c65dd8](https://github.com/orhan/pano-color-picker/commit/2c65dd8c82925ca9351633d76b78eb8fb7e8bddd))
+* fix storybook imports ([038e07d](https://github.com/orhan/pano-color-picker/commit/038e07d386e9252109008f53137e2efc11632669))
+* misc fixes ([d698df0](https://github.com/orhan/pano-color-picker/commit/d698df0aec9f1b985d6848b5decd50a17d2848ae))
+* move all stories to storybook app ([4370b90](https://github.com/orhan/pano-color-picker/commit/4370b90b6523a28c69ea18300855ce0ee6b99fc6))
+* new documentation site ([#14](https://github.com/orhan/pano-color-picker/issues/14)) ([807a891](https://github.com/orhan/pano-color-picker/commit/807a89128501eed306ea2e0b45d43f0866e1be0d))
+* new examples site url ([71b6921](https://github.com/orhan/pano-color-picker/commit/71b6921a301a4ee405198915b689a9d54a962467))
+* open examples in new tab ([026c725](https://github.com/orhan/pano-color-picker/commit/026c725c7d45f9690f71ca55c8d82a721356fdcc))
+* potentially setup storybook with vercel ([a82be65](https://github.com/orhan/pano-color-picker/commit/a82be658ccc39547a831173c2b29f5c69a55ade3))
+
 ### [3.2.2](https://github.com/hello-pangea/color-picker/compare/v3.2.1...v3.2.2) (2022-11-06)
 
 ### Others 🔧
