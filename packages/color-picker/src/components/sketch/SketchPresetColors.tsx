@@ -56,6 +56,7 @@ export default function SketchPresetColors({
           <div key={key} style={styles.swatchWrap}>
             <div
               style={{ ...styles.swatch, background: c.color }}
+              title={c.title || c.color}
               onClick={(e) => {
                 handleClick(c.color, e);
               }}

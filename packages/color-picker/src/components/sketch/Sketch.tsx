@@ -9,7 +9,8 @@ export type SketchPickerProps = {
   disableAlpha?: boolean;
   width?: string | number;
   className?: string;
-  presetColors?: string[];
+  displayPresetColors?: boolean;
+  presetColors?: (string | { color: string; title?: string })[];
   styles?: Record<string, React.CSSProperties>;
   renderers?: any;
 };
@@ -34,6 +35,7 @@ export function Sketch({
     "#9B9B9B",
     "#FFFFFF",
   ],
+  displayPresetColors = true,
   renderers,
   styles: passedStyles = {},
   className = "",
@@ -154,7 +156,10 @@ export function Sketch({
         onChange={changeColor}
         disableAlpha={disableAlpha}
       />
-      <SketchPresetColors colors={presetColors} onClick={changeColor} />
+
+      {displayPresetColors ? (
+        <SketchPresetColors colors={presetColors} onClick={changeColor} />
+      ) : undefined}
     </div>
   );
 }
