@@ -6,7 +6,7 @@
     "lint": "turbo run lint",
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "release": "pnpm --filter 'color-picker' release"
+    "release": "pnpm --filter 'pano-color-picker' release"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.42.0",

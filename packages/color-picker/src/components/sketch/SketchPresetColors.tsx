@@ -1,6 +1,5 @@
 import React from "react";
 import { ChangeColor } from "../../types/colors";
-import { Swatch } from "../common";
 
 type Props = {
   colors: (string | { color: string; title?: string })[];
@@ -53,14 +52,12 @@ export default function SketchPresetColors({
         const key = `${c.color}${("title" in c ? c.title : "") || ""}`;
         return (
           <div key={key} style={styles.swatchWrap}>
-            <Swatch
-              {...c}
-              style={styles.swatch}
-              onClick={handleClick}
-              focusStyle={{
-                boxShadow: `inset 0 0 0 1px rgba(0,0,0,.15), 0 0 4px ${c.color}`,
+            <div
+              style={{ ...styles.swatch, backgroundColor: c.color }}
+              onClick={(e) => {
+                handleClick(c.color, e);
               }}
-            />
+            ></div>
           </div>
         );
       })}
