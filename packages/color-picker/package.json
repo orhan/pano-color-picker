@@ -1,6 +1,6 @@
 {
   "name": "pano-color-picker",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "description": "React color pickers from Sketch, Photoshop, Chrome, Github, Twitter & more",
   "main": "./dist/color-picker.cjs.js",
