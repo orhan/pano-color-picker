@@ -1,5 +1,6 @@
 import React from "react";
 import { ChangeColor } from "../../types/colors";
+import { Swatch } from "../common";
 
 type Props = {
   colors: (string | { color: string; title?: string })[];
@@ -27,8 +28,6 @@ export default function SketchPresetColors({
       margin: "0 10px 10px 0",
     },
     swatch: {
-      height: "100%",
-      width: "100%",
       borderRadius: "3px",
       boxShadow: "inset 0 0 0 1px rgba(0,0,0,.15)",
     },
@@ -46,21 +45,22 @@ export default function SketchPresetColors({
 
   return (
     <div style={styles.colors} className="flexbox-fix">
-      {colors.map((colorObjOrString) => {
+      {colors.map((colorObjOrString, index) => {
         const c =
           typeof colorObjOrString === "string"
             ? { color: colorObjOrString }
             : colorObjOrString;
-        const key = `${c.color}${("title" in c ? c.title : "") || ""}`;
+        const key = `${index}-${c.color}${("title" in c ? c.title : "") || ""}`;
         return (
           <div key={key} style={styles.swatchWrap}>
-            <div
-              style={{ ...styles.swatch, background: c.color }}
-              title={c.title || c.color}
-              onClick={(e) => {
-                handleClick(c.color, e);
+            <Swatch
+              {...c}
+              style={styles.swatch}
+              onClick={handleClick}
+              focusStyle={{
+                boxShadow: `inset 0 0 0 1px rgba(0,0,0,.15), 0 0 4px ${c.color}`,
               }}
-            ></div>
+            />
           </div>
         );
       })}

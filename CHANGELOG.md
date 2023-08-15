@@ -1,5 +1,7 @@
 
 
+### [1.0.4](https://github.com/orhan/pano-color-picker/compare/v1.0.3...v1.0.4) (2023-08-14)
+
 ### [1.0.3](https://github.com/orhan/pano-color-picker/compare/v1.0.1...v1.0.3) (2023-08-14)
 
 ### [1.0.1](https://github.com/orhan/pano-color-picker/compare/v3.2.2...v1.0.1) (2023-08-14)
